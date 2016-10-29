@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+
+  serviio:
+    image: mbarbita/serviio
+    network_mode: "host"
+    ports:
+      - 8895:8895
+      - 23423:23423
+      - 1900:1900/udp
+    volumes:
+      - /home/marius/media-vol/:/media-vol
+
