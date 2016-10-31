@@ -1,0 +1,7 @@
+ubuntu-golang:
+  build: ubuntu-golang
+  container_name: ubuntu-golang
+  
+raspberry-relay-shield:
+  build: raspberry-relay-shield
+

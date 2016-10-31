@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+   openvpn:
+     image: mbarbita/openvpn
+     volumes:
+       - "openvpn-vol:/easy-rsa"
+     ports:
+       - 1194/tcp
+
+volumes:
+  openvpn-vol:
+    external: true
+

@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+   redis:
+     image: redis
+     volumes:
+       - "redis-server-vol:/data"
+     ports:
+       - 6379
+
+volumes:
+  redis-server-vol:
+    external: true
+

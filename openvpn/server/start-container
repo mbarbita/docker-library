@@ -1,0 +1,1 @@
+docker run -itd -p 1194:1194/udp -p 443:443/tcp --cap-add=NET_ADMIN --privileged -v openvpn-server-vol:/openvpn-data --name openvpn-server-01 mbarbita/openvpn-server
